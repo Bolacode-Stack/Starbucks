@@ -231,8 +231,12 @@ p > a {
         grid-column: 2 / 6;
     }
 
+    .footer-links {
+        margin: 20px 0;
+    }
+
     .footer-links > li {
-        margin: 35px 0;
+        margin: 15px 0;
     }
 
     li > a {
@@ -247,7 +251,7 @@ p > a {
     }
 
     .copyright  {
-        margin-top: 35px;
+        margin-top: 20px;
     }
 
     .copy {
@@ -516,11 +520,12 @@ p > a {
         display: block;
         flex-direction: column;
     }
-
+    
     .listing > li {
         display: block;
         margin: 25px 0;
         font-weight: 550;
+        justify-self: start;
         color: var(--listing-colors);
     }
 
@@ -531,6 +536,11 @@ p > a {
     /* Footer */  
     .socials-icons > a {
         background-color: #000;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
     }
   
 }
