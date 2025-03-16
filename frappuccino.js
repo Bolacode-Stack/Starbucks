@@ -1,28 +1,30 @@
-let output;
+let open;
+let close;
 
-let listing = document.querySelectorAll('.listing');
-let index = document.querySelector('.index');
-const icon = document.querySelector('#icons');
-const div = document.querySelector('.chevron-down')
-const group = document.querySelector('.list-group');
-const listHead = document.querySelector('.list-head');
+let toggle = document.getElementsByClassName('toggle');
+let contents = document.getElementsByClassName('contents');
+let icons = document.getElementsByClassName('icon');
+let icon = document.querySelectorAll('.fa-solid');
+console.log(icon)
 
-let one =  document.querySelectorAll('.one > li');
-const two = document.querySelector('.two > li');
-const three = document.querySelector('.three > li');
+for (let i = 0; i < toggle.length; i++)  {
+    toggle[i].addEventListener('click', ()   =>  {
+        if (parseInt(contents[i].style.height) !== contents[i].scrollHeight)  {
+          open = contents[i].style.height = contents[i].scrollHeight + "px";
+            icons[i].classList.remove('fa-chevron-down');
+            icons[i].classList.add('fa-chevron-up');
+        } else {
+            close = contents[i].style.height = "0px";
+            icons[i].classList.remove('fa-chevron-up')
+            icons[i].classList.add('fa-chevron-down')
+        }
+    })
 
-let indexes = [one, two, three];
-
-indexes.forEach((item, index)  =>  {
-        // console.log(item, index)
-})
-
-function openAccordion(e)   {
-        one.forEach((item)  =>  {
-                if (e.target.classList.contains('list-head'))  {
-                   item.style.display = 'block';
-                }
-        })
+    for (let i = 0; i < icon.length; i++)  {
+        icon[i].addEventListener('click', (e)   =>  {
+            if (open)  {
+                icon[i].classList.toggle('green');
+            }
+        });
+    }
 }
-
-group.addEventListener('click', openAccordion);
