@@ -25,7 +25,7 @@ for (let i = 0; i < toggle.length; i++)  {
             if (open)  {
                 icon[i].classList.toggle('green');
             } else if (close)  {
-                icon[i].classList.toggle('black')
+                icon[i].classList.add('black')
             }
         });
     }
