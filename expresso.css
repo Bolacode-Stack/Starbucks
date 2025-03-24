@@ -61,6 +61,7 @@ li {
     color: rgb(44, 43, 43)
 }
 
+
 .starbucks-grid {
     display: grid;
     column-gap: 10px;
@@ -188,10 +189,9 @@ p > a {
         border: none;
         text-align: left;
         color: #000;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         padding: 15px 10px;
         align-items: center;
-        letter-spacing: -0.5px;
         text-transform: capitalize;
         justify-content: space-between;
     }
@@ -203,19 +203,19 @@ p > a {
         font-weight: 500;
         line-height: 30px;
         transition: all 0.7s;
-        font-size: 0.85rem;
         color: var(--accordion-grey);
     } 
     
     .contents li > a {
-        font-size: 0.75rem;
+        font-size: 1rem;
         color: var(--accordion-grey);
     }
     
     .contents > li {
         display: flex;
+        margin: 15px 0;
         justify-self: start;
-
+        font-size: 1rem;
     }
 
     /* toggle icon */
@@ -373,7 +373,7 @@ p > a {
         display: grid;
         column-gap: 30px;
         align-items: center;
-        grid-template-columns: 8px repeat(12, calc((100% - 30px - 40px * 11) / 12)) 40px;
+        grid-template-columns: 40px repeat(12, calc((100% - 30px - 40px * 11) / 12)) 40px;
     }
 
     .lists-1  {
@@ -407,11 +407,14 @@ p > a {
     }
 
     .lists-2 {
+        left: 30px;
         display: flex;
         cursor: pointer;
         justify-self: end;
         align-items: center;
-        grid-column: 10 / -1;
+        position: relative;
+        grid-column: 10 / -2;
+        /* background-color: red; */
     }
 
     .find {
@@ -557,9 +560,10 @@ p > a {
     }
 
     .line {
-        left: 49px;
-        width: 82%;
+        left: 75px;
+        width:  76%;
         display: block;
+        grid-column: 5;
         position: relative;
     }
 
