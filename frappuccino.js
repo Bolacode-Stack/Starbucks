@@ -24,6 +24,8 @@ for (let i = 0; i < toggle.length; i++)  {
         icon[i].addEventListener('click', (e)   =>  {
             if (open)  {
                 icon[i].classList.toggle('green');
+            } else if (close)  {
+                icon[i].classList.toggle('black')
             }
         });
     }

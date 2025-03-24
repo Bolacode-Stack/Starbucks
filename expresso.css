@@ -223,6 +223,10 @@ p > a {
         color: var(--hover-green);
     }
 
+    .black {
+        color: var(--accordion-grey);
+    }
+
     /* Footer */
     .footer-lists {
         grid-column: 2;
