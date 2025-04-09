@@ -1,5 +1,4 @@
-let open;
-let close;
+let open, close;
 
 let toggle = document.getElementsByClassName('toggle');
 let contents = document.getElementsByClassName('contents');
