@@ -13,6 +13,9 @@ Kindly take you time to go through the repo and leave a star if you like it.
 - Semantic HTML5 Markup
 - Flexbox
 - CSS Grid
+- Responsive design in mind
+
+![](./CoffeeTech/Screenshot%202025-05-03%20122753.png)
 
 ## Links
 

@@ -58,7 +58,7 @@ li {
 
 .hamburger {
     grid-column: 7;
-    color: rgb(44, 43, 43)
+    color: rgb(44, 43, 43);
 }
 
 
@@ -382,12 +382,13 @@ p > a {
 
     .lists-1  {
         gap: 20px;
+        display: block;
         font-weight: 900;
         font-size: 0.9rem;
         font-weight: bold;
-        color: var(--greyish);
         letter-spacing: 1.5px;
         text-transform: uppercase;
+        color: var(--greyish)  !important;
     }
 
     .first-list {
@@ -595,7 +596,8 @@ p > a {
 
     .footer-links {
         display: flex;
-        margin-top: 15px;
+        margin: 20px 0;
+        /* margin-top: 15px; */
         justify-content: start;
         flex-direction: column;
     }
