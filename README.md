@@ -4,7 +4,7 @@ This is a fun side project i decided to code in my spare time. It was a bit chal
 
 Kindly take you time to go through the repo and leave a star if you like it.
 
-## Screenshot
+## `Screenshot`
 
 ![](./CoffeeTech/Desktop-Showcase.png)
 
