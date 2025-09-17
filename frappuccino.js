@@ -4,12 +4,11 @@ let toggle = document.getElementsByClassName('toggle');
 let contents = document.getElementsByClassName('contents');
 let icons = document.getElementsByClassName('icon');
 let icon = document.querySelectorAll('.fa-solid');
-console.log(icon)
 
 for (let i = 0; i < toggle.length; i++)  {
     toggle[i].addEventListener('click', ()   =>  {
         if (parseInt(contents[i].style.height) !== contents[i].scrollHeight)  {
-          open = contents[i].style.height = contents[i].scrollHeight + "px";
+            open = contents[i].style.height = contents[i].scrollHeight + "px";
             icons[i].classList.remove('fa-chevron-down');
             icons[i].classList.add('fa-chevron-up');
         } else {
@@ -21,11 +20,9 @@ for (let i = 0; i < toggle.length; i++)  {
 
     for (let i = 0; i < icon.length; i++)  {
         icon[i].addEventListener('click', (e)   =>  {
-            if (open)  {
+            if (close)  {
                 icon[i].classList.toggle('green');
-            } else if (close)  {
-                icon[i].classList.add('black')
-            }
-        });
+            }   
+        })
     }
 }

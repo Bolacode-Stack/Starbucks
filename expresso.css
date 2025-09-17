@@ -58,9 +58,9 @@ li {
 
 .hamburger {
     grid-column: 7;
+    cursor: pointer;
     color: rgb(44, 43, 43);
 }
-
 
 .starbucks-grid {
     display: grid;
@@ -202,8 +202,8 @@ p > a {
         overflow: hidden;
         font-weight: 500;
         line-height: 30px;
-        transition: all 0.7s;
         color: var(--accordion-grey);
+        transition: 800ms ease-in-out;
     } 
     
     .contents li > a {
