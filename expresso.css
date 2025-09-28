@@ -5,6 +5,7 @@
 }
 
 :root {
+    --icon: #333;
     --white: #ffffff;
     --black: #000000;
     --brown: #5f4633;
@@ -24,18 +25,18 @@ body {
     font-family: "Montserrat", serif;
 }
 
-    h1 {
-        font-size: 1.7rem;
-        font-size: clamp(1.7rem, 0.8793103448275862rem + 2.648275862068966vw, 2.7rem);
+h1 {
+    font-size: 1.7rem;
+    font-size: clamp(1.7rem, 0.8793103448275862rem + 2.648275862068966vw, 2.7rem);
     }
-
+    
     p {
         line-height: 1.7;
         font-size: 1.5rem;
         font-weight: 550;
         font-size: clamp(1.1rem, 0.7413793103448276rem + 1.103448275862069vw, 1.5rem);
     }
-
+    
     .navbar {
         padding: 18px 0 ;
         align-items: center;
@@ -47,19 +48,57 @@ body {
 }
 
 li {
-    justify-self: end;
-    list-style-type: none;
+    list-style: none;
 }
-
 
 .first-list, .lists-2 {
     display: none;
 }
 
-.hamburger {
-    grid-column: 7;
-    cursor: pointer;
-    color: rgb(44, 43, 43);
+.menu-icon {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    display: block;
+    position: absolute;
+    justify-self: flex-end;
+    flex-direction: column;
+    /* background-color: red; */
+
+    & .line  {
+        height: 4px;
+        width: 100%;
+    }
+}
+
+.slider-div {
+    left: 73px;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    background-color: var(--white);
+    /* background-color: blueviolet;     */
+
+    & li {
+    margin: 36px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    grid-column: 2 / -1;
+    letter-spacing: 0.5px
+}
+}
+
+.slider-line {
+    width: 65%;
+    height: 0.8px;
+    margin: 0 20px;
+    background-color: rgb(184, 180, 180);
+}
+
+.button-div {
+    margin: 20px 0;
+    grid-column: 5;
 }
 
 .starbucks-grid {
@@ -122,10 +161,10 @@ button {
     background-color: inherit;
     transition: 0.3s ease-in-out;
     border: 1px solid var(--white);
-}
 
-.button:hover {
+     & .button:hover {
     background-color: #027850;
+}
 }
 
 /* Crafted with love section */  
@@ -187,13 +226,18 @@ p > a {
         width: 100%;
         outline: none;
         border: none;
-        text-align: left;
         color: #000;
-        font-size: 1.2rem;
+        text-align: left;
+        font-size: 1.1rem;
         padding: 15px 10px;
         align-items: center;
+        letter-spacing: 0.3px;
         text-transform: capitalize;
         justify-content: space-between;
+    }
+
+    .toggle > i {
+        transition: 600ms ease;
     }
 
     .contents  {
@@ -214,8 +258,8 @@ p > a {
     .contents > li {
         display: flex;
         margin: 15px 0;
-        justify-self: start;
         font-size: 1rem;
+        justify-self: start;
     }
 
     /* toggle icon */
@@ -303,6 +347,10 @@ p > a {
         display: none;
     }
 
+    .slider-div {
+        /* display: none; */
+    }
+
     .starbucks-grid {
         display: grid;
         column-gap: 10px;
@@ -338,12 +386,11 @@ p > a {
         gap: 20px;
         display: grid;
         grid-template-rows: repeat(2, auto);
-        /* background-color: var(--cookie-cream); */
-    }
 
-    .cookie-text > p  {
+        &  > p  {
         margin: 0 auto;
         max-width: 18ch;
+    }
     }
 
     .disclaimer {
@@ -469,6 +516,10 @@ p > a {
     }
 
     .hamburger {
+        display: none;
+    }
+
+    .slider-div {
         display: none;
     }
 
