@@ -61,8 +61,8 @@ li {
     left: 185px;
     width: 30px;
     height: 30px;
-    position: relative;
     cursor: pointer;
+    position: relative;
 }
 
 .icon {
@@ -72,11 +72,8 @@ li {
     background-color: var(--black);
 }
 
-.hamburger-icon.active {
-}
-
 .hamburger-icon.active .icon:nth-child(1)  {
-    transition: 600ms ease;
+    transition: transform 600ms ease;
     transform: translateY(5px) rotate(45deg);
 }
 
@@ -85,25 +82,24 @@ li {
 }
 
 .hamburger-icon.active .icon:nth-child(3)  {
-    transition: 600ms ease;
+    transition: transform 600ms ease;
     transform: translateY(-5px) rotate(-45deg);
 }
 
 .menu-div {
-    left: 73px;
+    left: 76px;
     top: 85px;
     width: 100%;
     min-height: 100vh;
     position: absolute;
     transition: 800ms ease;
     transform: translateX(100%);
-    /* background-color: blueviolet;     */
     background-color: var(--white);
 
     & li {
     margin: 36px;
-    font-weight: 500;
     font-size: 1rem;
+    font-weight: 500;
     grid-column: 2 / -1;
     letter-spacing: 0.3px
 }
@@ -269,7 +265,6 @@ p > a {
 
     .list-group {
         grid-column: 1 / -1;
-        /* background-color: blueviolet; */
     }
 
     .wrapper {
@@ -396,16 +391,17 @@ p > a {
         height: 51px;
     }
 
-    .hamburger {
-        grid-column: 13;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
     }
 
     .lists-1, .lists-2 {
         display: none;
     }
 
-    .slider-div {
-        /* display: none; */
+    .hamburger-icon {
+        grid-column: 10;
     }
 
     .starbucks-grid {
