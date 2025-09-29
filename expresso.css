@@ -57,11 +57,11 @@ li {
 }
 
 .hamburger-icon {
-    top: 5px;
-    left: 185px;
     width: 30px;
     height: 30px;
+    grid-column: 7;
     cursor: pointer;
+    align-self: end;
     position: relative;
 }
 
@@ -401,7 +401,16 @@ p > a {
     }
 
     .hamburger-icon {
-        grid-column: 10;
+        grid-column: 13;
+    }
+
+    .menu-div {
+        left: 140px;
+        top: 100px;
+
+        & li {
+            font-size: 1.2rem;
+        }
     }
 
     .starbucks-grid {
@@ -471,6 +480,10 @@ p > a {
     .logo {
         width: 51px;
         height: 51px;
+    }
+
+    .hamburger-icon {
+        display: none;
     }
     
     .starbucks-grid {
