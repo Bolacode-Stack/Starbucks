@@ -111,7 +111,7 @@ li {
 }
 
 .menu-line {
-    width: 65%;
+    width: 69%;
     height: 0.8px;
     margin: 0 20px;
     background-color: rgb(184, 180, 180);
@@ -404,7 +404,7 @@ p > a {
         display: none;
     }
 
-    .hamburger-icon {
+    .hamburger {
         grid-column: 13;
     }
 
@@ -415,6 +415,10 @@ p > a {
         & li {
             font-size: 1.2rem;
         }
+    }
+
+    .menu-line {
+        width: 74%;
     }
 
     .starbucks-grid {
