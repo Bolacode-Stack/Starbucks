@@ -72,16 +72,16 @@ li {
     background-color: var(--black);
 }
 
-.hamburger.active .icon:nth-child(1)  {
+.hamburger.active .hamburger-icon:nth-child(1)  {
     transition: transform 600ms ease;
     transform: translateY(5px) rotate(45deg);
 }
 
-.hamburger.active .icon:nth-child(2)  {
+.hamburger.active .hamburger-icon:nth-child(2)  {
     opacity: 0;
 }
 
-.hamburger.active .icon:nth-child(3)  {
+.hamburger.active .hamburger-icon:nth-child(3)  {
     transition: transform 600ms ease;
     transform: translateY(-5px) rotate(-45deg);
 }
