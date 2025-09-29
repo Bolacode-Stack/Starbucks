@@ -1,6 +1,6 @@
 let open, close;
 
-let hamburger = document.querySelector(".hamburger-icon");
+let hamburger = document.querySelector(".hamburger");
 let menuDiv = document.querySelector(".menu-div");
 let coffeeShaker = document.querySelector(".coffee-shaker")
 let toggle = document.getElementsByClassName('toggle');
