@@ -22,6 +22,7 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: "Montserrat", serif;
 }
 
@@ -44,6 +45,12 @@ h1 {
         box-shadow: 0 0 3px grey;
     }
 
+.starbucks-grid {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 4px repeat(6, calc((100% - 32px - 10px * 5) / 6)) 4px;
+}
+
 .logo {
     grid-column: 2;
 }
@@ -56,6 +63,7 @@ li {
     display: none;
 }
 
+/* menu icon */
 .hamburger {
     width: 30px;
     height: 30px;
@@ -87,27 +95,25 @@ li {
 }
 
 .menu-div {
-    left: 76px;
-    top: 85px;
+    top: 80px;
+    z-index: 1;
     width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    transition: 800ms ease;
+    height: 100%;
+    position: fixed;
     transform: translateX(100%);
     background-color: var(--white);
+    transition: transform 800ms ease;
+}
 
-    & li {
+.menu-div ul > li {
     margin: 36px;
     font-size: 1rem;
     font-weight: 500;
-    grid-column: 2 / -1;
-    letter-spacing: 0.3px
-}
+    letter-spacing: 0.3px;
 }
 
 .menu-div.active {
-    transform: translateX(0);
-    transition: transform 800ms ease;
+    transform: translateX(20%);
 }
 
 .menu-line {
@@ -152,12 +158,6 @@ li {
     & i {
         font-size: 1.3rem;
     }
-}
-
-.starbucks-grid {
-    display: grid;
-    column-gap: 10px;
-    grid-template-columns: 4px repeat(6, calc((100% - 32px - 10px * 5) / 6)) 4px;
 }
 
 .section > * {
@@ -417,6 +417,10 @@ p > a {
         }
     }
 
+    .menu-div.active {
+        transform: translateX(0);
+    }
+
     .menu-line {
         width: 74%;
     }
@@ -593,7 +597,7 @@ p > a {
         display: none;
     }
 
-    .slider-div {
+    .menu-div {
         display: none;
     }
 

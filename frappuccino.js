@@ -13,15 +13,23 @@ hamburger.addEventListener("click", ()  =>  {
     menuDiv.classList.toggle("active")
 });
 
+window.addEventListener("scroll", (event)  =>  {
+    if (window.pageYOffset >= 30)  {
+        event.preventDefault();
+    }
+})
+
 coffeeShaker.addEventListener("click",  (e)  =>  {
      hamburger.classList.remove("active")
     menuDiv.classList.remove("active")
-});
+})
+
 
 for (let i = 0; i < toggle.length; i++)  {
     toggle[i].addEventListener('click', ()   =>  {
         if (parseInt(contents[i].style.height) !== contents[i].scrollHeight)  {
             open = contents[i].style.height = contents[i].scrollHeight + "px";
+            console.log(open)
             icons[i].classList.remove('fa-chevron-down');
             icons[i].classList.add('fa-chevron-up');
         } else {
