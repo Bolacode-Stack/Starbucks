@@ -11,19 +11,23 @@ let icon = document.querySelectorAll('.fa-solid');
 hamburger.addEventListener("click", ()  =>  {
     hamburger.classList.toggle("active")
     menuDiv.classList.toggle("active")
-});
-
-window.addEventListener("scroll", (event)  =>  {
-    if (window.pageYOffset >= 30)  {
-        event.preventDefault();
-    }
-})
+    });
 
 coffeeShaker.addEventListener("click",  (e)  =>  {
-     hamburger.classList.remove("active")
-    menuDiv.classList.remove("active")
-})
+    hamburger.classList.remove("active");
+    menuDiv.classList.remove("active");
+});
 
+function preventScroll(event)  {
+    if (menuDiv.classList.contains("active"))  {
+        if (menuDiv.offsetHeight == window.innerHeight)
+            event.preventDefault();
+        }
+}
+
+window.addEventListener("scroll", preventScroll);
+
+console.log(menuDiv.offsetHeight, window.innerHeight);
 
 for (let i = 0; i < toggle.length; i++)  {
     toggle[i].addEventListener('click', ()   =>  {
