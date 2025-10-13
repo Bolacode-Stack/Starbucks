@@ -11,7 +11,7 @@ let icon = document.querySelectorAll('.fa-solid');
 hamburger.addEventListener("click", ()  =>  {
     hamburger.classList.toggle("active")
     menuDiv.classList.toggle("active")
-    });
+});
 
 coffeeShaker.addEventListener("click",  (e)  =>  {
     hamburger.classList.remove("active");
@@ -27,7 +27,8 @@ function preventScroll(event)  {
 
 window.addEventListener("scroll", preventScroll);
 
-console.log(menuDiv.offsetHeight, window.innerHeight);
+// console.log(menuDiv.offsetHeight, window.innerHeight);
+
 
 for (let i = 0; i < toggle.length; i++)  {
     toggle[i].addEventListener('click', ()   =>  {

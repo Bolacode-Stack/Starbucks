@@ -24,4 +24,3 @@ Kindly take you time to go through the repo and leave a star if you like it.
 ## Links
 
 - `Live Site URL:` [...](https://comingsoon.com)
-
