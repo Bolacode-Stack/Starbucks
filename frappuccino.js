@@ -29,7 +29,6 @@ window.addEventListener("scroll", preventScroll);
 
 // console.log(menuDiv.offsetHeight, window.innerHeight);
 
-
 for (let i = 0; i < toggle.length; i++)  {
     toggle[i].addEventListener('click', ()   =>  {
         if (parseInt(contents[i].style.height) !== contents[i].scrollHeight)  {
