@@ -8,9 +8,7 @@ Kindly take you time to go through the repo and leave a star if you like it.
 
 ![](./CoffeeTech/Desktop-Showcase.png)
 
-### `Mobile and Tablet 📱📷`
 ![](./CoffeeTech/mobile-menu(3).png)
-![](./CoffeeTech/tablet-menu.png)
 
 ## Built with
 
