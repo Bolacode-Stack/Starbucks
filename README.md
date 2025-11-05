@@ -8,7 +8,7 @@ Kindly take you time to go through the repo and leave a star if you like it.
 
 ![](./CoffeeTech/Desktop-Showcase.png)
 
-![](./CoffeeTech/mobile-menu(3).png)
+![](./CoffeeTech/Mobile-menu(3).png)
 
 ## Built with
 

@@ -2,18 +2,18 @@ let open, close;
 
 let hamburger = document.querySelector(".hamburger");
 let menuDiv = document.querySelector(".menu-div");
-let coffeeShaker = document.querySelector(".coffee-shaker");
 let toggle = document.getElementsByClassName("toggle");
 let contents = document.getElementsByClassName("contents");
 let icons = document.getElementsByClassName("icon");
 let icon = document.querySelectorAll(".fa-solid");
+const heroGrid = document.querySelector(".hero-grid")
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   menuDiv.classList.toggle("active");
 });
 
-coffeeShaker.addEventListener("click", (e) => {
+heroGrid.addEventListener("click", (e) => {
   hamburger.classList.remove("active");
   menuDiv.classList.remove("active");
 });

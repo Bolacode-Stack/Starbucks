@@ -308,10 +308,10 @@ p > a {
   width: 100%;
   outline: none;
   border: none;
-  color: var(--black);
   font-size: 1em;
   text-align: left;
   font-weight: 500;
+  color: var(--black);
   padding: 15px 10px;
   align-items: center;
   text-transform: capitalize;
@@ -339,7 +339,7 @@ p > a {
   font-size: 0.85rem;
   transform: translateX(0);
   transition: transform 500ms ease-in-out;
-};
+}
 
 /* toggle icon */
 .green {
@@ -441,8 +441,13 @@ li > a:hover {
     }
   }
 
-  .menu-div.active {
-    transform: translateX(0);
+  .tablet.active {
+    transform: translateX(2.5%);
+  }
+
+  .menu-div {
+    top: -5px;
+    position: fixed;
   }
 
   .menu-line {
