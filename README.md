@@ -6,9 +6,9 @@ Kindly take you time to go through the repo and leave a star if you like it.
 
 ## `Desktop ‍💻`
 
-![](./CoffeeTech/Desktop-Showcase.png)
+![](./Coffee-Tech%20📸/Desktop-Showcase.png)
 
-![](./CoffeeTech/Mobile-menu(3).png)
+![](./Coffee-Tech%20📸/Mobile-menu(3).png)
 
 ## Built with
 
