@@ -1,6 +1,6 @@
 # Starbucks Homepage.
 
-This is a fun side project i decided to build in my spare time. It was a bit challenging but total worth it and it helped me sharpen my skills in a big way😁.
+This is a fun side project i decided to build in my spare time. It was a bit challenging but totally worth it 😊. 
 
 Kindly take you time to go through the repo and leave a star if you like it.
 
