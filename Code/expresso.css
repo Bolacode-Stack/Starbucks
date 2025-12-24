@@ -488,7 +488,7 @@ li > a:hover {
 
   .cookie-brew {
     display: grid;
-    justify-self: end;
+   justify-self: end;
     margin-top: 33px;
     column-gap: 10px;
     grid-column: 1 / -1;

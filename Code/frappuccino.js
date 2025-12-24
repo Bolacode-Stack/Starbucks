@@ -6,11 +6,17 @@ let toggle = document.getElementsByClassName("toggle");
 let contents = document.getElementsByClassName("contents");
 let icons = document.getElementsByClassName("icon");
 let icon = document.querySelectorAll(".fa-solid");
-const heroGrid = document.querySelector(".hero-grid")
+const heroGrid = document.querySelector(".hero-grid");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   menuDiv.classList.toggle("active");
+
+  if (hamburger.classList.contains("active"))  {
+    disableScroll();
+  } else {
+    enableScroll();
+  }
 });
 
 heroGrid.addEventListener("click", (e) => {
@@ -18,6 +24,33 @@ heroGrid.addEventListener("click", (e) => {
   menuDiv.classList.remove("active");
 });
 
+let keys = {
+  37: 1,
+  38: 1,
+  39: 1,
+  40: 1,
+};
+
+function preventDefault(e) {
+  e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e)  {
+  if (keys[e.keyCode])  {
+    preventDefault(e)
+    return false;
+  }
+}
+
+function disableScroll()  {
+  window.addEventListener("keydown", preventDefaultForScrollKeys, false)
+}
+
+function enableScroll()  {
+  window.removeEventListener('keydown', preventDefaultForScrollKeys, false)
+}
+
+// Accordion
 for (let i = 0; i < toggle.length; i++) {
   toggle[i].addEventListener("click", () => {
     if (parseInt(contents[i].style.height) !== contents[i].scrollHeight) {
