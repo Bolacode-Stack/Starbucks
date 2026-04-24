@@ -28,7 +28,7 @@ let keys = {
   37: 1,
   38: 1,
   39: 1,
-  40: 1,
+  40: 1
 };
 
 function preventDefault(e) {
@@ -63,12 +63,4 @@ for (let i = 0; i < toggle.length; i++) {
       icons[i].classList.add("fa-chevron-down");
     }
   });
-
-  for (let i = 0; i < icon.length; i++) {
-    icon[i].addEventListener("click", (e) => {
-      if (close) {
-        icon[i].classList.toggle("green");
-      }
-    });
-  }
 }
