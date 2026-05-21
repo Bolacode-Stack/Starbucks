@@ -8,46 +8,46 @@ let icons = document.getElementsByClassName("icon");
 let icon = document.querySelectorAll(".fa-solid");
 const heroGrid = document.querySelector(".hero-grid");
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  menuDiv.classList.toggle("active");
-
-  if (hamburger.classList.contains("active"))  {
+document.addEventListener("click", (e) => {
+  if (event.target == hamburger) {
+    hamburger.classList.toggle("active");
+    menuDiv.classList.toggle("active");
+  } else if (hamburger.classList.contains("active")  && event.target == menuDiv) return;
+  else {
+    hamburger.classList.remove("active")
+    menuDiv.classList.remove("active")
+  }
+  if (hamburger.classList.contains("active")) {
     disableScroll();
   } else {
     enableScroll();
   }
 });
 
-heroGrid.addEventListener("click", (e) => {
-  hamburger.classList.remove("active");
-  menuDiv.classList.remove("active");
-});
-
 let keys = {
   37: 1,
   38: 1,
   39: 1,
-  40: 1
+  40: 1,
 };
 
 function preventDefault(e) {
   e.preventDefault();
 }
 
-function preventDefaultForScrollKeys(e)  {
-  if (keys[e.keyCode])  {
-    preventDefault(e)
+function preventDefaultForScrollKeys(e) {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
     return false;
   }
 }
 
-function disableScroll()  {
-  window.addEventListener("keydown", preventDefaultForScrollKeys, false)
+function disableScroll() {
+  window.addEventListener("keydown", preventDefaultForScrollKeys, false);
 }
 
-function enableScroll()  {
-  window.removeEventListener('keydown', preventDefaultForScrollKeys, false)
+function enableScroll() {
+  window.removeEventListener("keydown", preventDefaultForScrollKeys, false);
 }
 
 // Accordion
